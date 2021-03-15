@@ -59,6 +59,9 @@ li:first-letter {
   cursor: default;
   text-decoration: none;
 }
+.weather-forecast {
+  margin-top: 50px;
+}
 .weather-forecast h4 {
   color: rgb(97, 103, 107);
   font-size: 14px;
