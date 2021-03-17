@@ -59,9 +59,6 @@ li:first-letter {
   cursor: default;
   text-decoration: none;
 }
-.weather-forecast {
-  margin-top: 50px;
-}
 .weather-forecast h4 {
   color: rgb(97, 103, 107);
   font-size: 14px;
@@ -73,12 +70,7 @@ li:first-letter {
   height: 48px;
   width: 48px;
 }
-.weather-forecast-temperature {
-  text-align: center;
+.weather-forecast p {
   color: rgb(97, 103, 107);
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 15px;
-  margin-top: 5px;
-  word-spacing: 2px;
-}
+  font-size: 16px;
+  text-align: center;

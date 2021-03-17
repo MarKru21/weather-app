@@ -58,8 +58,9 @@ function displayForecast(response) {
                 </h4>
                 <img 
                 src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png">
-                    <strong>${Math.round(forecast.main.temp_max)}°
+                <p><strong>${Math.round(forecast.main.temp_max)}°
                     </strong>${Math.round(forecast.main.temp_min)}°
+                    </p>
                 </div>
             </div>`;
 
@@ -70,8 +71,9 @@ function displayForecast(response) {
                 </h4>
                 <img 
                 src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png">
-                    <strong>${Math.round(forecast.main.temp_max)}°
+                    <p><strong>${Math.round(forecast.main.temp_max)}°
                     </strong>${Math.round(forecast.main.temp_min)}°
+                    </p>
                 </div>
             </div>`;
 
@@ -82,8 +84,9 @@ function displayForecast(response) {
                 </h4>
                 <img 
                 src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png">
-                    <strong>${Math.round(forecast.main.temp_max)}°
+                    <p><strong>${Math.round(forecast.main.temp_max)}°
                     </strong>${Math.round(forecast.main.temp_min)}°
+                    </p>
                 </div>
             </div>`;
     
@@ -94,8 +97,9 @@ function displayForecast(response) {
                 </h4>
                 <img 
                 src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png">
-                    <strong>${Math.round(forecast.main.temp_max)}°
+                    <p><strong>${Math.round(forecast.main.temp_max)}°
                     </strong>${Math.round(forecast.main.temp_min)}°
+                    </p>
                 </div>
             </div>`;
     
@@ -106,8 +110,9 @@ function displayForecast(response) {
                 </h4>
                 <img 
                 src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png">
-                    <strong>${Math.round(forecast.main.temp_max)}°
+                    <p><strong>${Math.round(forecast.main.temp_max)}°
                     </strong>${Math.round(forecast.main.temp_min)}°
+                    </p>
                 </div>
             </div>`;
 
@@ -118,8 +123,9 @@ function displayForecast(response) {
                 </h4>
                 <img 
                 src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png">
-                    <strong>${Math.round(forecast.main.temp_max)}°
+                    <p><strong>${Math.round(forecast.main.temp_max)}°
                     </strong>${Math.round(forecast.main.temp_min)}°
+                    </p>
                 </div>
             </div>`;
 }
