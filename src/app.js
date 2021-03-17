@@ -139,6 +139,20 @@ apiURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${api
 axios.get(apiURL).then(displayForecast);
 }
 
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+function showPosition(position) {
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=9fdfde34a67a648a41ee1aa53553e730&units=metric`;
+  axios.get(apiURL).then(displayTemperature);
+
+  apiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=9fdfde34a67a648a41ee1aa53553e730&units=metric`;
+  axios.get(apiURL).then(displayForecast);
+}
+
 function handleSubmit(event) {
     event.preventDefault();
     let cityInputElement = document.querySelector("#city-input");
@@ -171,5 +185,8 @@ fahrenheitLInk.addEventListener("click", displayFahrenheitTemperature);
 
 let celciusLInk = document.querySelector("#celcius-link");
 celciusLInk.addEventListener("click", displayCelciusTemperature);
+
+let button = document.querySelector("button");
+button.addEventListener("click", getCurrentLocation);
 
 search("Berlin");
